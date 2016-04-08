@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    ＃Layout xml item命名規則：
+        xxx_linear
+        xxx_frame
+        xxx_relative
+        xxx_text
+        xxx_image
+    ＃設定View的位置盡量不要用dp,用gravity or weight or relative location
+    ＃All size分為normal(phone) and large(tablet),用dimens.xml管理
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/main_text"
+        android:text="Hello World!"
+        android:layout_width="@dimen/text_width"
+        android:layout_height="@dimen/text_height"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.ideabus.ideabus_structure.custom_view.custom_wheel.UnitNumberPicker
+            android:id="@+id/picker1"
+            style="@style/NumberPicker"
+            android:layout_height="match_parent"
+            android:layout_width="100dp" />
+
+        <com.ideabus.ideabus_structure.custom_view.custom_wheel.UnitNumberPicker
+            android:id="@+id/picker2"
+            style="@style/NumberPicker"
+            android:layout_height="match_parent"
+            android:layout_width="100dp"/>
+
+        <com.ideabus.ideabus_structure.custom_view.custom_wheel.UnitNumberPicker
+            android:id="@+id/picker3"
+            style="@style/NumberPicker"
+            android:layout_height="match_parent"
+            android:layout_width="100dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

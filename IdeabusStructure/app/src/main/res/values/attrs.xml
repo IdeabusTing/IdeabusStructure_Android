@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- Custom Wheel -->
+    <attr name="numberPickerStyle" format="reference" />
+
+	<declare-styleable name="NumberPicker">
+		<!--  Color for the solid color background if such for optimized rendering. -->
+		<attr name="solidColor" format="color|reference" />
+		<!--  The divider for making the selection area. -->
+		<attr name="selectionDivider" format="reference" />
+		<!-- the selection divider color -->
+		<attr name="selectionDividerColor" format="color" />
+		<!--  The height of the selection divider. -->
+		<attr name="selectionDividerHeight" format="dimension" />
+		<!--  The distance between the two selection dividers. -->
+		<attr name="selectionDividersDistance" format="dimension" />
+		<!--  The min height of the NumberPicker. -->
+		<attr name="internalMinHeight" format="dimension" />
+		<!--  The max height of the NumberPicker. -->
+		<attr name="internalMaxHeight" format="dimension" />
+		<!--  The min width of the NumberPicker. -->
+		<attr name="internalMinWidth" format="dimension" />
+		<!--  The max width of the NumberPicker. -->
+		<attr name="internalMaxWidth" format="dimension" />
+		<!--  The layout of the number picker. -->
+		<attr name="internalLayout" format="reference" />
+		<!--  The drawable for pressed virtual (increment/decrement) buttons. -->
+		<attr name="virtualButtonPressedDrawable" format="reference" />
+		<!-- the text size for virtual (increment/decrement) buttons -->
+		<attr name="virtualButtonTextSize" format="dimension" />
+		<!-- the text alpha for virtual (increment/decrement) buttons (value 0~255) -->
+		<attr name="virtualButtonTextAlpha" format="integer" />
+		<!-- the middle text size -->
+		<attr name="middleTextSize" format="dimension" />
+		<!-- the middle text color -->
+		<attr name="middleTextColor" format="color" />
+	</declare-styleable>
+    <declare-styleable name="UnitNumberPicker">
+		<!-- the text of unit. -->
+		<attr name="unitText" format="string" />
+		<!-- the color of the unit text. -->
+		<attr name="unitTextColor" format="color" />
+		<!-- the size of the unit text. -->
+		<attr name="unitTextSize" format="dimension" />
+	</declare-styleable>
+
+
+
+</resources>
